@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mami's Casita Cantina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/mamisCasitaCantina_logo.png" alt="Mami's Casita Cantina logo">
+    </header>
+
+    <section class="aboutUs">
+        <h1>Welcome to<br>
+            Mami's Casita Cantina</h1>
+        <p>With a fusion between Puerto Rican flavors and Mexican cuisine, we bring you a delicious array of foods that
+            will delight your tastebuds and keep you coming back for more.</p>
+    </section>
+    <section class="menu">
+        <button id="foodMenuButton">Food Menu</button>
+        <button id="drinksMenuButton">Drinks Menu</button>
+        <button id="kidMenuButton">Kid Menu</button>
+    </section>
+    <section class="videos">
+        <video class="hidden" id="foodMenu" width="375" height="auto" autoplay muted>
+            <source src="menus/Food MENU.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            <!-- Text to be shown incase browser doesnt support html5 -->
+        </video>
+        <video class="hidden" id="drinkMenu" width="375" height="auto" autoplay muted>
+            <source src="menus/cocktail MENU.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            <!-- Text to be shown incase browser doesnt support html5 -->
+        </video>
+        <video class="hidden" id="kidMenu" width="375" height="auto" autoplay muted>
+            <source src="menus/kid MENU.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            <!-- Text to be shown incase browser doesnt support html5 -->
+        </video>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>

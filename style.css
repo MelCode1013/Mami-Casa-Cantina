@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  /* border: 1px solid red; */
+}
+
+body {
+  background: url("img/spanishRice.jpg") no-repeat;
+  background-size: 100%;
+  margin: 0;
+  height: 100vh;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  width: 75%;
+  height: auto;
+  padding: 1rem;
+}
+
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px -4px rgba(0, 0, 0, 0.88);
+  text-align: center;
+  padding: 2%;
+  margin: 5% 10%;
+}
+
+section.aboutUs > h1 {
+  padding-bottom: 15px;
+  font-size: 3rem;
+}
+
+section.aboutUs > p {
+  padding: 0 10%;
+  font-size: 1.2rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.videos {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+button {
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: rgb(164, 0, 0);
+  color: white;
+  transition: all ease 1s;
+}
+
+.hidden {
+  display: none;
+}
+
+/* responsive mobile media queries*/
+
+@media screen and (min-width: 375px) {
+  section.aboutUs > h1 {
+    font-size: 3rem;
+    padding-top: 3%;
+  }
+
+  section.aboutUs > p {
+    padding: 2% 9%;
+      font-size: 2rem;
+  }
+
+  .menu {
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    margin: 5% 20%;
+  }
+
+  button {
+    width: 100%;
+    padding: 5%;
+    color: rgb(164, 0, 0);
+    margin: 5px 0;
+  }
+
+  .drinksMenu {
+    margin: 5% 0;
+  }
+}
